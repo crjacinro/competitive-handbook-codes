@@ -1,1 +1,1 @@
-g++ -std=c++11 -O2 -Wall HelloWorld.cpp -o HelloWorld
+g++ -std=c++11 -O2 -Wall MaxSubArray.cpp -o HelloWorld
