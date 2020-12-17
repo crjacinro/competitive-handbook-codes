@@ -2,9 +2,10 @@
 
 using namespace std;
 
-int maxSubArray(int arr[], int n)
+int maxSubArray(vector<int> arr)
 {
     int best = 0, sum = 0;
+    int n = arr.size();
 
     for (int k = 0; k < n; k++)
     {
@@ -17,11 +18,11 @@ int maxSubArray(int arr[], int n)
 
 bool test_case_1()
 {
-    int arr[] = {-1, 2, 4, -3, 5, 2, -5, 2};
-    int n = (sizeof(arr) / sizeof(arr[0]));
+    vector<int> arr = {-1, 2, 4, -3, 5, 2, -5, 2};
+
     int expected = 10;
 
-    int result = maxSubArray(arr, n);
+    int result = maxSubArray(arr);
 
     cout << "Result: " << result << endl;
     cout << "Expected: " << result << endl;
